@@ -14,7 +14,8 @@ import java.util.List;
 @Controller
 @RequestMapping("/rest")
 public class ControllerRest {
-    private static final Logger logger = Logger.getLogger(ControllerRest.class.getName());
+    //日志
+    private static Logger logger = Logger.getLogger(ControllerRest.class);
 
     @Autowired
     private YserService yserService;

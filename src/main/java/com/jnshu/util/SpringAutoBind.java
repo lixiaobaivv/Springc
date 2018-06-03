@@ -1,5 +1,7 @@
 package com.jnshu.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.convert.converter.Converter;
 
 import java.text.ParseException;
@@ -10,6 +12,7 @@ import java.text.SimpleDateFormat;
 /* 必须继承Converter接口 并且重写 * convert(String source) 方法*/
 public class SpringAutoBind implements Converter<String, Long> {
 
+    private static Logger logger = LoggerFactory.getLogger(SpringAutoBind.class);
     /* string 类型的日期格式转换为Long类型的日期格式 */
     @Override
     public Long convert(String source) {

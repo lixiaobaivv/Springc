@@ -35,13 +35,7 @@
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
-    <!-- 开启注解 -->
-    <context:annotation-config/>
 
-    <!-- 使用annotation 自动注册bean，并保证@Required,@Autowired的属性被注入 -->
-    <context:component-scan base-package="com.***">
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-    </context:component-scan>
 
     <!-- 开启自动切面代理 -->
     <aop:aspectj-autoproxy/>
