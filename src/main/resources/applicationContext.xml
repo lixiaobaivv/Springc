@@ -37,8 +37,4 @@
 
 
 
-    <!-- 开启自动切面代理 -->
-    <aop:aspectj-autoproxy/>
-
-
 </beans>
